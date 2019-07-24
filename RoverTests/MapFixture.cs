@@ -1,10 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using Rover;
+using Xunit;
 
 namespace RoverTests
 {
-    class MapFixture
+    public class MapFixture
     {
+        [Fact]
+        public void test_map_size()
+        {
+            Mars map = new Mars();
+            Assert.Equal(5, map.size.X);
+            Assert.Equal(5, map.size.Y);
+        }
     }
 }
