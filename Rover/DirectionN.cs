@@ -8,6 +8,6 @@ namespace Rover
 {
     public class DirectionN : IDirection
     {
-        public Coordinate _north = new Coordinate() {X=0,Y=1 };
+        public Coordinate _direction = new Coordinate() {X=0,Y=1 };
     }
 }

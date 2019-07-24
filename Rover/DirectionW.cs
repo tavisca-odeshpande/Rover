@@ -2,6 +2,6 @@
 {
     public class DirectionW : IDirection
     {
-        public Coordinate _west =new Coordinate() { X = -1, Y = 0 };
+        public Coordinate _direction = new Coordinate() { X = -1, Y = 0 };
     }
 }

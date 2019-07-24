@@ -6,10 +6,7 @@ using System.Threading.Tasks;
 
 namespace Rover
 {
-    public class Coordinate
+    public interface IMap
     {
-        public int X { get; set; }
-        public int Y { get; set; }
-
     }
 }

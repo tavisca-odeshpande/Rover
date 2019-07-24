@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace Rover
 {
-    public class Coordinate
+    public class Mars:IMap
     {
-        public int X { get; set; }
-        public int Y { get; set; }
-
+        public Coordinate size = new Coordinate() { X = 5, Y = 5 };
     }
 }
