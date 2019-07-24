@@ -1,7 +1,16 @@
-﻿namespace Rover
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Rover
 {
-    public class DirectionS : IDirection
+    public enum Directions
     {
-        public Coordinate _direction = new Coordinate() { X = 0, Y = -1 };
+            North,
+            South,
+            East,
+            West
     }
 }

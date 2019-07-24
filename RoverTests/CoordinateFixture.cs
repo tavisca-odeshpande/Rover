@@ -15,14 +15,5 @@ namespace RoverTests
         }
        
     }
-    public class DirectionFixture
-    {
-        public void can_store_direction()
-        {
-            Coordinate c = new Coordinate() { X = 1, Y = 2 };
-            Assert.Equal(1, c.X);
-            Assert.Equal(2, c.Y);
-        }
-    }
     
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Rover
 {
-    public interface IDirection
+    public interface IInstruction
     {
-        
+        bool TryInstruction(string _input, VectorPosition _cvp, out VectorPosition _vposition);
     }
 }

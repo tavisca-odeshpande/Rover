@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace Rover
 {
-    public class DirectionN : IDirection
+    public class VectorPosition
     {
-        public Coordinate _direction = new Coordinate() {X=0,Y=1 };
+        public Coordinate _coordinate=new Coordinate();
+        public Directions _direction= new Directions();
     }
 }
