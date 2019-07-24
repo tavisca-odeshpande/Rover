@@ -50,6 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Coordinate.cs" />
+    <Compile Include="DirectionE.cs" />
+    <Compile Include="DirectionN.cs" />
+    <Compile Include="DirectionS.cs" />
+    <Compile Include="DirectionW.cs" />
+    <Compile Include="IDirection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
