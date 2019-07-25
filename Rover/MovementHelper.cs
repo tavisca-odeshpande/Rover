@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
-namespace Rover
+namespace RoverApplication
 {
     public static class MovementHelper
     {
@@ -38,6 +34,7 @@ namespace Rover
             Directions result = _rotateindirection[res];
             return result;
          }
+
 
 
     }

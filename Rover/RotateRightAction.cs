@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rover
+namespace RoverApplication
 {
     public class RotateRightAction : IInstruction
     {
-        public bool TryInstruction(string _input, VectorPosition _cvp, out VectorPosition _vp)
+        public bool TryInstruction(string _input, VectorPosition _cvp, IMap m, out VectorPosition _vp)
         {
             _vp = _cvp;
             if (_input == "R")

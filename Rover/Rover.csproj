@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{2FA57A94-FFD8-48F1-B43D-F6AC80C637A2}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Rover</RootNamespace>
-    <AssemblyName>Rover</AssemblyName>
+    <RootNamespace>RoverApplication</RootNamespace>
+    <AssemblyName>RoverApplication</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

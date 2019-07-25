@@ -4,13 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rover
+namespace RoverApplication
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Rov r = new Rov("1", "2", Directions.North);
+            Mars map = new Mars();
+            Rov r = new Rov("1", "2", Directions.North,map);
             r.DisplayVectorPosition();
 
             Console.WriteLine("F");
@@ -24,7 +25,6 @@ namespace Rover
             Console.WriteLine("F");
             r.PassInstruction("F");
             r.DisplayVectorPosition();
-
 
             Console.WriteLine("R");
             r.PassInstruction("R");
