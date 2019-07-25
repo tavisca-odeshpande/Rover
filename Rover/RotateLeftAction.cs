@@ -14,7 +14,7 @@ namespace Rover
             _vp = _cvp;
             if (_input == "L")
             {
-                _vp._direction = MovementHelper.Rotate(_cvp._direction, 3);
+                _vp._direction = MovementHelper.Rotate(_cvp._direction, 7);
             }
             _vp = _cvp;
             return false;

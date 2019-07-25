@@ -21,6 +21,11 @@ namespace Rover
             r.PassInstruction("L");
             r.DisplayVectorPosition();
 
+            Console.WriteLine("F");
+            r.PassInstruction("F");
+            r.DisplayVectorPosition();
+
+
             Console.WriteLine("R");
             r.PassInstruction("R");
             r.DisplayVectorPosition();
