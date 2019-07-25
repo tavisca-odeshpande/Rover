@@ -12,12 +12,25 @@ namespace Rover
         {
             Rov r = new Rov("1", "2", Directions.North);
             r.DisplayVectorPosition();
+
+            Console.WriteLine("F");
+            r.PassInstruction("F");
+            r.DisplayVectorPosition();
+
+            Console.WriteLine("L");
+            r.PassInstruction("L");
+            r.DisplayVectorPosition();
+
+            Console.WriteLine("R");
+            r.PassInstruction("R");
+            r.DisplayVectorPosition();
+
+            Console.WriteLine("F");
             r.PassInstruction("F");
             r.DisplayVectorPosition();
 
             Console.ReadKey();
-
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+           
         }
     }
 }

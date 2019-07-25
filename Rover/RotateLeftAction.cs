@@ -11,11 +11,10 @@ namespace Rover
         
         public bool TryInstruction(string _input, VectorPosition _cvp, out VectorPosition _vp)
         {
-            _vp = null;
+            _vp = _cvp;
             if (_input == "L")
             {
-                _vp = _cvp;
-                return true;
+                _vp._direction = MovementHelper.Rotate(_cvp._direction, 3);
             }
             _vp = _cvp;
             return false;

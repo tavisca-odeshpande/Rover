@@ -16,7 +16,21 @@ namespace Rover
             {Directions.East,new Coordinate(){ X=1,Y=0 } }
         };
 
-        static Directions[] _rotatein = { Directions.East,Directions.North,Directions.West,Directions.South};
-        public static LinkedList<Directions> sentence = new LinkedList<Directions>();
+        public static Dictionary<int,Directions> _rotateindirection = new Dictionary<int,Directions>
+        {
+            {0,Directions.North},
+            {1,Directions.East},
+            {2,Directions.South},
+            {3,Directions.West}
+        };
+
+        public static Directions Rotate(Directions d, int param)
+        {
+            int res = ((int)d + param) % 4;
+            Directions result = _rotateindirection[res];
+            return result;
+         }
+
+
     }
 }
