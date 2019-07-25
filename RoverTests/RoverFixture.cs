@@ -1,7 +1,4 @@
-﻿using Rover;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using RoverApplication;
 using Xunit;
 
 namespace RoverTests
@@ -11,7 +8,8 @@ namespace RoverTests
         [Fact]
         public void test_rover_actions()
         {
-            Rov r = new Rov("1", "2", Directions.North);
+            Mars m = new Mars();
+            Rov r = new Rov("1", "2", Directions.North,m);
 
             Assert.Equal(1,r.DisplayVectorPositionX());
             Assert.Equal(2, r.DisplayVectorPositionY());

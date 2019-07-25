@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Rover;
+﻿using RoverApplication;
 using Xunit;
 
 namespace RoverTests
