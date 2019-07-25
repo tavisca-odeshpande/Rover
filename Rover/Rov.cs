@@ -32,5 +32,21 @@ namespace RoverApplication
             Console.WriteLine($"Coordinates are {_vectorposition._coordinate.X} , {_vectorposition._coordinate.Y}");
             Console.WriteLine($"Direction is{_vectorposition._direction}");
         }
+
+        public int DisplayVectorPositionX()
+        {
+            return _vectorposition._coordinate.X;  
+        }
+
+        public int DisplayVectorPositionY()
+        {
+            return _vectorposition._coordinate.Y;
+        }
+
+        public Enum DisplayVectorPositionD()
+        {
+            return _vectorposition._direction;
+        }
+
     }
 }
