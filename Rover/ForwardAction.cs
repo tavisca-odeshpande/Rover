@@ -1,8 +1,8 @@
-﻿namespace Rover
+﻿namespace RoverApplication
 {
     class ForwardAction : IInstruction
     {
-        public bool TryInstruction(string _input, VectorPosition _cvp, out VectorPosition _vp)
+        public bool TryInstruction(string _input, VectorPosition _cvp,IMap m, out VectorPosition _vp)
         {
             _vp = _cvp;
             if (_input == "F")
@@ -13,5 +13,6 @@
             else   
                 return false;
         }
+
     }
 }

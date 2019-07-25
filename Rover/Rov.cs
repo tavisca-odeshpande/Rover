@@ -4,15 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rover
+namespace RoverApplication
 {
     public class Rov
     {
-        public Rov(string x, string y , Directions d)
+        public Rov(string x, string y , Directions d,IMap _map)
         {
             _vectorposition._coordinate.X = int.Parse(x);
             _vectorposition._coordinate.Y = int.Parse(y);
             _vectorposition._direction = d;
+             map = _map;
         }
 
         public VectorPosition _vectorposition= new VectorPosition();
@@ -21,7 +22,7 @@ namespace Rover
 
         public void PassInstruction(string _instr)
         {
-            if (_actions.TryAction(_instr, _vectorposition, out VectorPosition _resultvectorposition) == true)
+            if (_actions.TryAction(_instr, _vectorposition,map, out VectorPosition _resultvectorposition) == true)
                 _vectorposition = _resultvectorposition;
             return;
         }

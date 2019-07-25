@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
-namespace Rover
+namespace RoverApplication
 {
     public enum Directions
     {
             North=0,
-            South=2,
-            East=1,
-            West=3
+            NorthEast=1,
+            East=2,
+            SouthEast=3,
+            South = 4,
+            SouthWest =5,
+            West = 6,
+            NorthWest = 7
     }
 }
